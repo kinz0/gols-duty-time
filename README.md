@@ -10,9 +10,9 @@ Convert GOLS new roster excel format be compatible with the legacy format
 
 3) Download ngrok at https://ngrok.com/download
 
-4) Setup ngrok in terminal as "./ngrok http 8000"
+4) Run a local server on ngrok by entering "./ngrok http 8000" in terminal
 
-5) Run a local server on ngrok and provide the URL for GOLS staff to use.
+5) provide the URL for GOLS staff to use
  
 
 
