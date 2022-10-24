@@ -86,7 +86,7 @@ def excel_export(request, date):
 
     raw = str(Document.objects.all())
     raw = raw[22:-3]
-    dir = f"/users/kelvin/desktop/pycharm/gols_duty_time/src/media/{raw}"
+    dir = f"./media/{raw}"
 
     df_new = pd.read_excel(dir, sheet_name="刷卡記錄",
                            skiprows=lambda x: x in [0, 1, 3])
