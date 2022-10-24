@@ -5,6 +5,7 @@ from .models import Document
 from django.http import HttpResponse
 from django.contrib import messages
 
+import os
 
 # Create your views here.
 @csrf_exempt
@@ -110,4 +111,6 @@ def excel_export(request, date):
 
     wb.save(response)
 
+    os.remove(f"./media/{raw}")
+    
     return response
